@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eDZ-06-MjW">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Arabic_Localization" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpd-zw-wjL">
+                                <rect key="frame" x="16" y="301" width="223" height="60"/>
+                                <string key="text">What Is the Purpose
+of Life?</string>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <color key="textColor" red="0.43529411759999997" green="0.039215686270000001" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFy-6c-zsh">
+                                <rect key="frame" x="16" y="381" width="300" height="157.66666666666663"/>
+                                <string key="text">Fear God and keep his
+commandments, for this is the
+whole duty of man. For God will
+bring every deed into judgment,
+including every hidden thing,
+whether it is good or evil</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.43529411759999997" green="0.039215686270000001" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="display" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="CSm-uo-GIY">
+                                <rect key="frame" x="2" y="154" width="128" height="126.66666666666667"/>
+                                <color key="tintColor" red="0.43529411759999997" green="0.039215686270000001" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="5MM-5d-1ss"/>
+                                    <constraint firstAttribute="width" secondItem="CSm-uo-GIY" secondAttribute="height" id="JCu-WB-5bZ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPM-S6-JWY">
+                                <rect key="frame" x="121.66666666666669" y="568.66666666666663" width="150" height="40"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.039215686270000001" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="bgf-Ny-h47"/>
+                                    <constraint firstAttribute="height" constant="40" id="qLG-oi-AfI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Change Language"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="actionSwitchLanguage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tD0-vI-8dI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CSm-uo-GIY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="2" id="2Uj-jI-61w"/>
+                            <constraint firstItem="xFy-6c-zsh" firstAttribute="leading" secondItem="lpd-zw-wjL" secondAttribute="leading" id="CAi-wO-i2o"/>
+                            <constraint firstItem="CSm-uo-GIY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Ga7-bt-wZ2"/>
+                            <constraint firstItem="JPM-S6-JWY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GgM-4v-pJe"/>
+                            <constraint firstItem="lpd-zw-wjL" firstAttribute="top" secondItem="CSm-uo-GIY" secondAttribute="bottom" constant="20" id="KVN-HJ-39Z"/>
+                            <constraint firstItem="xFy-6c-zsh" firstAttribute="top" secondItem="lpd-zw-wjL" secondAttribute="bottom" constant="20" id="Kst-d7-JYR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lpd-zw-wjL" secondAttribute="trailing" constant="16" id="U5J-hG-Hk6"/>
+                            <constraint firstItem="JPM-S6-JWY" firstAttribute="top" secondItem="xFy-6c-zsh" secondAttribute="bottom" constant="30" id="a1D-zo-1Uc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xFy-6c-zsh" secondAttribute="trailing" constant="16" id="iZa-qL-2st"/>
+                            <constraint firstItem="lpd-zw-wjL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="z4w-Ii-DCY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="j1h-j2-v0x"/>
+                    <connections>
+                        <outlet property="labelDetail" destination="xFy-6c-zsh" id="m62-zz-IUE"/>
+                        <outlet property="labelTitle" destination="lpd-zw-wjL" id="g31-tO-EqZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="790" y="-35"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VIT-wB-KHO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eDZ-06-MjW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qOA-gj-fL1">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="lS3-cD-CkY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l09-e1-zWN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54.198473282442748" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="display" catalog="system" width="128" height="101"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
